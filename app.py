@@ -22,6 +22,7 @@ def index():
     } 
 
 @app.route('/chunks', methods=['POST'])
+@cross_origin()
 def process_pdf():
     data = request.get_json()  # Get JSON body of request
     pdf_name = data.get('pdfName')  # Extract pdfName from JSON
@@ -36,6 +37,7 @@ def process_pdf():
 
     return jsonify(chunks), 200  # Returns JSON response
 @app.route('/quiz', methods=['POST'])
+@cross_origin()
 def chunkQuiz():
     data = request.get_json()  # Get JSON body of request
     chunk = data.get('chunk')  # Extract chunk from JSON
