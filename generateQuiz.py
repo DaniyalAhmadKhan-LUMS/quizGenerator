@@ -31,10 +31,10 @@ def generateMCQS(text):
     Please provide the evaluation in the form of a json. Following is the format of the json:
     [{{   
     "Question": "question",
-    "Answer A": {{"Option A":"option A","Explanation A": "why the answer A is correct or incorrect"}},
-    "Answer B": {{"Option B":"option B","Explanation B": "why the answer B is correct or incorrect"}},
-    "Answer C": {{"Option C":"option C","Explanation C": "why the answer C is correct or incorrect"}},
-    "Answer D": {{"Option D":"option D","Explanation D": "why the answer D is correct or incorrect"}},
+    "Answer A": {{"Option A":"option A","Explanation A": "Short explanation of why the answer A is correct or incorrect"}},
+    "Answer B": {{"Option B":"option B","Explanation B": "Short explanation of why the answer B is correct or incorrect"}},
+    "Answer C": {{"Option C":"option C","Explanation C": "Short explanation of why the answer C is correct or incorrect"}},
+    "Answer D": {{"Option D":"option D","Explanation D": "Short explanation of why the answer D is correct or incorrect"}},
     "Correct Option": "Correct option as, 'A', 'B', 'C', or 'D'"
     
     }}]
