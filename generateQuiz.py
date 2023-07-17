@@ -169,8 +169,9 @@ def gradeFAQs(dictQuestion):
 
     You are a teacher grading a quiz based on given answers, and context. Evaluate the responses and grade them. The \
       grade should be out of 10. You need to give equal weightage to all of the answers \
-      For every correct options give give 3 marks. For partially correct option give 1 \
-      mark. If all the options are correct give 10 marks. Grade will be of the overall question.  
+      For every correct options give give 3 marks. For partially correct options give 1 \
+      mark to each option. For each incorrect option give 0 marks. If all the options are correct give 10 marks. In the \
+      end combine the grade of all the options and give a total grade for the question out of 10. Grade will be of the overall question. \
       Please provide the evaluation in the form of a json. Following is the format of the json:
     {{   
     "Question": "question",
