@@ -14,7 +14,7 @@ def text_to_doc(text_arr):
     doc_chunksText = []
 
     for doc in page_docs:
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size = 1600, separators = ["\n\n", "\n", ".", "!", "?", ",", " ", ""], chunk_overlap = 0)
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size = 1600, separators = ["\n\n", "\n", ".", "!", "?", ","], chunk_overlap = 0)
         chunks = text_splitter.split_text(doc.page_content)
         for i, chunk in enumerate(chunks):
             doc = Document(page_content=chunk, metadata={"page":doc.metadata["page"], "chunk": i})
