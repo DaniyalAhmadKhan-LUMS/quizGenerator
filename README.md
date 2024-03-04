@@ -56,3 +56,6 @@ The Flask-Backend consists of two main components:
    * **Summary Generation:** Produces summaries for each text chunk, aiding users in understanding the context.
    * **Question Creation:** Generates both multiple-choice and open-ended questions from text chunks.
    * **Grading:** Automatically grades user responses, providing feedback on their answers.
+  
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
