@@ -1,6 +1,7 @@
-## PDF Quiz
+# PDF Quiz
 PDF Quiz Application is divided into two parts `React-Fronend` and `Flask-Backend`. 
-`Flask-Backed` is further divided into two parts:
+## Flask-Backend
+`Flask-Backend` is further divided into two parts:
 ### PDF Preprocessing:
 PDF preprocessing involves reading the PDF and dividing the whole PDF into smaller chunks that can be processed further: 
 * `PyPDF2`, and `langchain.document_loader.PyPDFLoader` is used to read the PDF.
