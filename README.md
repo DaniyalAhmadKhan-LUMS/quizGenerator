@@ -11,14 +11,14 @@ The PDF Quiz Application is an innovative tool designed to transform PDF documen
 
 ### Prerequisites
 
-- Python 3.x
+- Python >=3.9
 - Node.js and npm/yarn
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone [[repository-url]](https://github.com/DaniyalAhmadKhan-LUMS/quizGenerator.git)
+   git clone https://github.com/DaniyalAhmadKhan-LUMS/quizGenerator.git
 2. **Set up the Flask-Backend**
    Navigate to the Flask-Backend directory and install the required Python dependencies.
    ```bash
