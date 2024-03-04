@@ -53,8 +53,6 @@ The Flask-Backend consists of two main components:
    * **Reading PDFs:** Utilizes `PyPDF2` and `langchain.document_loader.PyPDFLoader` for efficient PDF parsing.
    * **Segmentation:** Employs `langchain.text_splitter.RecursiveCharacterTextSplitter` to divide the PDF into smaller, processable chunks.
 2. **Quiz Generation**
-This comprises steps involving the generation of the Questions their choices/answers, and then grading them once the user has solved a question:
-* Generate the summary of the text chunk to show the user before he moves on to the questions.
-* Generate multiple-choice questions from the chunk along with choices and the correct choice.
-* Generate open-ended questions along with the answers.
-* Grade the answers of the user and tell them, why a particular choice is correct and why a particular choice is incorrect.
+   * **Summary Generation:** Produces summaries for each text chunk, aiding users in understanding the context.
+   * **Question Creation:** Generates both multiple-choice and open-ended questions from text chunks.
+   * **Grading:** Automatically grades user responses, providing feedback on their answers.
