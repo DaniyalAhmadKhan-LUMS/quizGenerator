@@ -20,7 +20,6 @@ The PDF Quiz Application is an innovative tool designed to transform PDF documen
    ```bash
    git clone [repository-url]
 
-   
 ## Flask-Backend
 `Flask-Backend` is further divided into two parts:
 ### PDF Preprocessing:
