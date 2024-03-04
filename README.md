@@ -1,4 +1,4 @@
-# PDF Quiz Application
+# PDF Quiz
 
 The PDF Quiz Application is an innovative tool designed to transform PDF documents into interactive quizzes, enhancing the learning and assessment process. This application seamlessly integrates a `React-Frontend` for user interaction with a `Flask-Backend` for processing, creating a dynamic and engaging educational experience.
 
@@ -18,7 +18,7 @@ The PDF Quiz Application is an innovative tool designed to transform PDF documen
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/DaniyalAhmadKhan-LUMS/quizGenerator.git
+   https://github.com/DaniyalAhmadKhan-LUMS/PDF-Quiz.git
 2. **Set up the Flask-Backend**
    Navigate to the Flask-Backend directory and install the required Python dependencies.
    ```bash
