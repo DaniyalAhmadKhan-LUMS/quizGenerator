@@ -27,15 +27,32 @@ The PDF Quiz Application is an innovative tool designed to transform PDF documen
    ```bash
    pip install -r requirements.txt
    ```
-
-## Flask-Backend
-`Flask-Backend` is further divided into two parts:
-### PDF Preprocessing:
-PDF preprocessing involves reading the PDF and dividing the whole PDF into smaller chunks that can be processed further: 
-* `PyPDF2`, and `langchain.document_loader.PyPDFLoader` is used to read the PDF.
-* `langchain.text_splitter.RecursiveCharacterTextSplitter` is then used to break the whole PDF into small chunks.
-
-### Quiz Generation:
+3. **Set up the React-Frontend**
+   Navigate to the React-Frontend directory and install the required JavaScript dependencies.
+   ```bash
+   cd ../React-Frontend
+   ```
+   ```bash
+   npm install
+   ```
+### Running the Application
+1. **Start the Flask-Backend**
+   ```bash
+   python app.py
+   ```
+2. **Launch the React-Frontend**
+   Open a new terminal window and run:
+   ```bash
+   npm start
+   ```
+   Visit `http://localhost:3000` in your browser to access the application.
+## Architecture
+### Flask-Backend
+The Flask-Backend consists of two main components:
+1. **PDF Preprocessing:**
+   * **Reading PDFs:** Utilizes `PyPDF2` and `langchain.document_loader.PyPDFLoader` for efficient PDF parsing.
+   * **Segmentation:** Employs `langchain.text_splitter.RecursiveCharacterTextSplitter` to divide the PDF into smaller, processable chunks.
+2. **Quiz Generation**
 This comprises steps involving the generation of the Questions their choices/answers, and then grading them once the user has solved a question:
 * Generate the summary of the text chunk to show the user before he moves on to the questions.
 * Generate multiple-choice questions from the chunk along with choices and the correct choice.
